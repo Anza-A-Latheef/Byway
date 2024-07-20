@@ -4,5 +4,6 @@ from.import views
 urlpatterns = [
     path('',views.home,name='home'),
     # path('clickbutton/',views.clickbutton,name='clickbutton'),
+    path('singlepage/', views.pageRoute, name='singlepage'),
 
 ]

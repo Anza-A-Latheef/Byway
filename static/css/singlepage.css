@@ -1,0 +1,772 @@
+/* Resetting */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+/* Global styles */
+body{
+    font-family: Inter,sans-serif;
+    color:#334155;
+    ;
+}
+#single-page{
+    display:block;
+}
+.wrapper{
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 89%;
+}
+.wrapper-scroll{
+    margin: 0 10px 0 7% ;
+    max-width: 1280px;
+    width: 93%;
+}
+/* single-page styling starts  */
+#single-page #main header{
+    padding:10px 0px ;
+    border-bottom: 1px solid #e2e8f0;
+}
+#single-page #main header .wrapper .header_cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#single-page #main header .wrapper .header_cont h1.left a{
+    display: flex;
+    align-items: center;
+}
+#single-page #main header .wrapper .header_cont h1.left a .logo_container{
+    width: 31px;
+    height: 40px;
+}
+#single-page #main header .wrapper .header_cont h1.left a .logo_container img{
+    width: 100%;
+    height: 100%;
+}
+#single-page #main header .wrapper .header_cont h1.left a span{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 19.36px;
+    text-align: left;
+    color: #334155;
+
+}
+#single-page #main header .wrapper .header_cont nav .right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#single-page #main header .wrapper .header_cont nav .right .icon_container img{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+#single-page #main header .wrapper .header_cont nav .right .user-profile{
+    background-color: #334155;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#single-page #main header .wrapper .header_cont nav .right .user-profile{
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    color: white;
+}
+/* introduction styling starts */
+#single-page #main #introduction{
+    position: relative;
+}
+#background{
+    position: absolute;
+    background: #F8FAFC;
+    top: 62px;
+    height: 400px;
+    width: 100%;
+    z-index: -1;
+}
+#single-page #main #introduction .wrapper .introduction-cont{
+    display: flex;
+}
+#single-page #main #introduction .wrapper .introduction-cont .left{
+    width: 70%;
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .path{
+    display: flex;
+    padding: 35px 0px;
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .path ul{
+    display: flex;
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .path ul li{
+    font-size: 14px;
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .path ul li span{
+    font-size: 13px;
+    color: #2563EB;
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .path ul li i{
+    margin: 0px 20px;
+    font-size: 15px;
+    font-weight: bolder;
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .intro{
+
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .intro h2{
+    font-size: 36px;
+    color: #0F172A;
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .intro p{
+    font-size: 15px;
+    font-weight: 400;
+    color: #334155;
+    margin-top: 30px;
+    width: 80%;
+    line-height: 1.5;
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .intro .details{
+    display: flex;
+    margin: 25px 0px;
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .intro .details .rating{
+    display: flex;
+    align-items: center;
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .intro .details .rating span{
+    color: #FEC84B;
+    font-size: 15px;
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .intro .details .rating .rating-star{
+    border-right: 3px solid #ccc;
+    display: flex;
+    padding: 0px 10px;
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .intro .details .rating .rating-star .star_cont{
+    width: 15px;
+    height: 15px;
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .intro .details .rating .rating-star .star_cont img{
+    width: 100%;
+    height: 100%;
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .intro .details .rating .rating-star small{
+    font-size: 14px;
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .intro .details .rating small{
+    margin-left: 10px;
+    font-size: 14px;
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .intro .creator{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .intro .creator .creator-profile{
+    width: 40px;
+    height: 40px;
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .intro .creator .creator-profile img{
+    width: 100%;
+    height: 100%;
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .intro .creator p{
+    margin-top: 0px;
+    font-size: 13px;
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .intro .creator p span{
+    color: #2563EB;
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .intro .languages{
+    display: flex; 
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .intro .languages .lang_icon{
+    width: 20px;
+    height: 20px;
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .intro .languages .lang_icon img{
+    width: 100%;
+    height: 100%;
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .intro .languages p{
+    margin-top: 0px;    
+    font-size: 13px;
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .intro .creator p span{
+
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .tabs{
+    margin: 50px 0px 30px 0px;
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .tabs .tabs-container{
+    width: 100%;
+    border-bottom: 1px solid #E2E8F0
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .tabs .tabs-container ul{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0px;
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .tabs .tabs-container ul li{
+    padding: 17px 40px;
+    border-radius: 8px;
+    border: 1px solid #E2E8F0;
+    font-size: 14px;
+    color: #0F172A;
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .tabs .tabs-container ul li:nth-child(1){
+    background: #EFF6FF;
+    border: none;
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .description{
+    
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .description .describe{
+    margin-bottom: 20px;
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .description .describe:nth-child(3){
+    border-top:1px solid #E2E8F0;
+    border-bottom:1px solid #E2E8F0;
+    padding: 30px 0px;
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .description .describe h5{
+    color: #0F172A;
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .description .describe p{
+    font-size: 16px;
+    line-height: 1.5;
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .description .describe .instructor{
+   
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .description .describe .instructor h6{
+    color: #2563EB;
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .description .describe .instructor p{
+    font-size: 15px;
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .description .describe .instructor-profile{
+    display: flex;
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .description .describe .instructor-profile .profile-left{
+    width: 50px;
+    height: 50px;    
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .description .describe .instructor-profile .profile-left img{
+    width: 100%;
+    height: 100%;
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .description .describe .instructor-profile .profile-right{
+
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .description .describe .instructor-profile .profile-right ul{
+
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .description .describe .instructor-profile .profile-right ul li{
+
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .description .describe .instructor-profile .profile-right ul li .medal_cont{
+
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .description .describe .instructor-profile .profile-right ul li .medal_cont img{
+    width: 100%;
+    height: 100%;
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .description .describe .instructor-profile .profile-right ul li span{
+
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .syllabus{
+
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .syllabus h5{
+
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .syllabus .syllabus-cont{
+
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .syllabus .syllabus-cont ul{
+
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .syllabus .syllabus-cont ul li{
+    display: flex;
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .syllabus .syllabus-cont ul li .left{
+    display: flex;
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .syllabus .syllabus-cont ul li .left i{
+
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .syllabus .syllabus-cont ul li .left h6{
+
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .syllabus .syllabus-cont ul li .right{
+    display: flex;
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .syllabus .syllabus-cont ul li .right span{
+
+}
+#single-page #main #introduction .wrapper .introduction-cont .right{
+    width: 30%;
+}
+#single-page #main #introduction .wrapper .introduction-cont .right .right-cont{
+
+}
+#single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card{
+
+}
+#single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-top{
+
+}
+#single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-top .poster{
+
+}
+#single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-top .poster img{
+    width: 100%;
+    height: 100%;
+}
+#single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-top .price-detail{
+    display: flex;
+}
+#single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-top .price-detail h2{
+
+}
+#single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-top .price-detail h3{
+
+}
+#single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-top .price-detail span{
+
+}
+#single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-top .card-button{
+
+}
+#single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-top .card-button button{
+
+}
+#single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-top .card-button button.cart-button{
+
+}
+#single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-bottom{
+
+}
+#single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-bottom h6{
+
+}
+#single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-bottom .social_cont{
+    width: 304px;
+    height: 48px;
+}
+#single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-bottom .social_cont img{
+    width: 100%;
+    height: 100%;
+}
+/* introduction styling ends */
+/* reviews section styling starts */
+#single-page #main #reviews{
+
+}
+#single-page #main #reviews .wrapper h5{
+
+}
+#single-page #main #reviews .wrapper .reviews_cont{
+    display: flex;
+}
+#single-page #main #reviews .wrapper .reviews_cont .left{
+
+}
+#single-page #main #reviews .wrapper .reviews_cont .left .rating{
+    display: flex;
+}
+#single-page #main #reviews .wrapper .reviews_cont .left .rating .star_cont{
+
+}
+#single-page #main #reviews .wrapper .reviews_cont .left .rating .star_cont img{
+    width: 100%;
+    height: 100%;
+}
+#single-page #main #reviews .wrapper .reviews_cont .left .rating h6{
+
+}
+#single-page #main #reviews .wrapper .reviews_cont .left .rating p{
+
+}
+#single-page #main #reviews .wrapper .reviews_cont .left .customer-rating{
+
+}
+#single-page #main #reviews .wrapper .reviews_cont .left .customer-rating ul{
+
+}
+#single-page #main #reviews .wrapper .reviews_cont .left .customer-rating ul li{
+    display: flex;
+}
+#single-page #main #reviews .wrapper .reviews_cont .left .customer-rating ul li .star_cont{
+
+}
+#single-page #main #reviews .wrapper .reviews_cont .left .customer-rating ul li .star_cont img{
+    width: 100%;
+    height: 100%;
+}
+#single-page #main #reviews .wrapper .reviews_cont .left .customer-rating ul li .star_cont img.gray{
+
+}
+#single-page #main #reviews .wrapper .reviews_cont .left .customer-rating ul li span{
+
+}
+#single-page #main #reviews .wrapper .reviews_cont .right{
+
+}
+#single-page #main #reviews .wrapper .reviews_cont .right .review-section{
+
+}
+#single-page #main #reviews .wrapper .reviews_cont .right  .review-section .card{
+    display: flex;
+}
+#single-page #main #reviews .wrapper .reviews_cont .right  .review-section .card .cardleft{
+    display: flex;
+}
+#single-page #main #reviews .wrapper .reviews_cont .right  .review-section .card .cardleft .img-cont{
+
+}
+#single-page #main #reviews .wrapper .reviews_cont .right  .review-section .card .cardleft .img-cont img{
+    width: 100%;
+    height: 100%;
+}
+#single-page #main #reviews .wrapper .reviews_cont .right  .review-section .card .cardleft h6{
+
+}
+#single-page #main #reviews .wrapper .reviews_cont .right  .review-section .card .cardright{
+
+}
+#single-page #main #reviews .wrapper .reviews_cont .right  .review-section .card .cardright .rating-date{
+    display: flex;
+}
+#single-page #main #reviews .wrapper .reviews_cont .right  .review-section .card .cardright .rating-date .rating{
+
+}
+#single-page #main #reviews .wrapper .reviews_cont .right  .review-section .card .cardright .rating-date .rating .star_cont{
+
+}
+#single-page #main #reviews .wrapper .reviews_cont .right  .review-section .card .cardright .rating-date .rating .star_cont img{
+    width: 100%;
+    height: 100%;
+}
+#single-page #main #reviews .wrapper .reviews_cont .right  .review-section .card .cardright .rating-date .rating h6{
+
+}
+#single-page #main #reviews .wrapper .reviews_cont .right  .review-section .card .cardright .rating-date span{
+
+}
+#single-page #main #reviews .wrapper .reviews_cont .right  .review-section .card .cardright p{
+
+}
+/* reviews section styling ends */
+/* customer section styling starts */
+#single-page #customer{
+    background-color: #F8FAFC;
+    padding: 30px 0px;
+    margin: 55px 0px;
+}
+#single-page #customer .wrapper-scroll .customer_cont{
+    display: flex;
+    flex-direction: column;
+}
+#single-page #customer .wrapper-scroll .customer_cont .top{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+#single-page #customer .wrapper-scroll .customer_cont .top .left{
+    width: 27%;
+}
+#single-page #customer .wrapper-scroll .customer_cont .top .left h5{
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 33.6px;
+    text-align: left;
+    color: #000000;
+}
+#single-page #customer .wrapper-scroll .customer_cont .top .right{
+    display: flex;
+    align-items: center;
+    gap: 21px;
+    margin-right: 59px;
+}
+#single-page #customer .wrapper-scroll .customer_cont .top .right button{
+    background-color: #94A3B8;
+    padding: 8px 21px;
+    border-radius: 6px;
+    border: #94A3B8;
+    color: #ffffff;
+    font-size: 22px;
+}
+#single-page #customer .wrapper-scroll .customer_cont .bottom{
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+#single-page #customer .wrapper-scroll .customer_cont .bottom .cards{
+    display:flex ;
+    align-items: center;
+    margin: 25px 0px;
+    gap: 25px;
+    justify-content: space-between;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+    scroll-behavior: smooth;
+}
+#single-page #customer .wrapper-scroll .customer_cont .bottom .cards .card{
+    display: block;
+    border: 1px solid #E2E8F0;
+    border-radius: 15px;
+    box-shadow: 0px 0px 8px 0px #3B82F61F;
+    padding: 15px;
+    background: #fff;
+    min-width: 32%;
+    transition: transform .3s;
+}
+#single-page #customer .wrapper-scroll .customer_cont .bottom .cards .card .quote_img{
+    width: 48px;
+    height: 48px;
+    padding: 8px;
+}
+#single-page #customer .wrapper-scroll .customer_cont .bottom .cards .card .quote_img img{
+    width: 100%;
+    height: 100%;
+}
+#single-page #customer .wrapper-scroll .customer_cont .bottom .cards .card p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25.6px;
+    text-align: left;   
+    color: #000000;
+}
+#single-page #customer .wrapper-scroll .customer_cont .bottom .cards .card .profile{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#single-page #customer .wrapper-scroll .customer_cont .bottom .cards .card .profile .pro_pic{
+    width: 60px;
+    height: 60px;
+}
+#single-page #customer .wrapper-scroll .customer_cont .bottom .cards .card .profile .pro_pic img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+#single-page #customer .wrapper-scroll .customer_cont .bottom .cards .card .profile .details{
+    display: flex;
+    flex-direction: column;
+}
+#single-page #customer .wrapper-scroll .customer_cont .bottom .cards .card .profile .details p{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28.8px;
+    text-align: left;
+}
+#single-page #customer .wrapper-scroll .customer_cont .bottom .cards .card .profile .details span{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    color: #334155;
+}
+/* customer section styling ends */
+/* courses styling starts */
+#single-page #courses{
+    margin-bottom: 30px;
+    margin-top: 52px;
+}
+#single-page #courses .wrapper .courses_cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#single-page #courses .wrapper .courses_cont .top{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+#single-page #courses .wrapper .courses_cont .top h3{
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 33.6px;
+    color: #0F172A;
+}
+#single-page #courses .wrapper .courses_cont .bottom{
+    width: 100%;
+    margin-top: 25px;
+}
+#single-page #courses .wrapper .courses_cont .bottom .cards{
+    width: 100%;
+}
+#single-page #courses .wrapper .courses_cont .bottom .cards ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#single-page #courses .wrapper .courses_cont .bottom .cards ul li{
+    width: 23%;
+    border-radius: 15px;
+    padding: 16px;
+    border: 1px solid #E2E8F0;
+    box-shadow: 0px 0px 8px 0px #3B82F61F;
+}
+#single-page #courses .wrapper .courses_cont .bottom .cards ul li a{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+#single-page #courses .wrapper .courses_cont .bottom .cards ul li a .bg_cont{
+    width: 242px;
+    height: 139px;
+    border-radius: 8px;
+}
+#single-page #courses .wrapper .courses_cont .bottom .cards ul li a .bg_cont img{
+    width: 100%;
+    height: 100%;
+}
+#single-page #courses .wrapper .courses_cont .bottom .cards ul li a h5{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28.8px;
+    text-align: left;
+    color: #0F172A;
+}
+#single-page #courses .wrapper .courses_cont .bottom .cards ul li a span{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    color: #334155;
+}
+#single-page #courses .wrapper .courses_cont .bottom .cards ul li a .rating{
+    display: flex;
+    align-items: center;
+}
+#single-page #courses .wrapper .courses_cont .bottom .cards ul li a .rating .star_cont{
+    width: 18px;
+    height: 18px;
+}
+#single-page #courses .wrapper .courses_cont .bottom .cards ul li a .rating .star_cont img{
+    width: 100%;
+    height: 100%;
+}
+#single-page #courses .wrapper .courses_cont .bottom .cards ul li a .rating small{
+    font-size: 12px;
+    font-weight: 600;
+    text-align: left;
+    color: #334155;
+    margin-left: 5px;
+}
+#single-page #courses .wrapper .courses_cont .bottom .cards ul li a p{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    color: #334155;
+}
+#single-page #courses .wrapper .courses_cont .bottom .cards ul li a h6{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+    color:#0F172A;   
+}
+/* courses styling ends */
+/* footer styling starts */
+#single-page footer{
+    background: #1E293B;
+    padding: 80px 0px 100px 0px;
+    margin-top: 60px;
+}
+#single-page footer .wrapper .footer_cont{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+}
+#single-page footer .wrapper .footer_cont .left{
+    width:35%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 80px;
+}
+#single-page footer .wrapper .footer_cont .left h1{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+#single-page footer .wrapper .footer_cont .left .logo_cont{
+    width: 100px;
+    height: 35px;
+}
+#single-page footer .wrapper .footer_cont .left .logo_cont img{
+    width: 100%;
+    height: 100%;
+}
+#single-page footer .wrapper .footer_cont .left p{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    color: #CBD5E1;
+}
+#single-page footer .wrapper .footer_cont .right{
+    display: flex;
+    width: 65%;
+    justify-content: space-between;
+}
+#single-page footer .wrapper .footer_cont .right .footer_data{
+    display: flex;
+    flex-direction: column;
+}
+#single-page footer .wrapper .footer_cont .right .footer_data h6{
+font-size: 17px;
+font-weight: 500;
+line-height: 28.8px;
+text-align: left;
+color: #F1F5F9;
+}
+#single-page footer .wrapper .footer_cont .right .footer_data ul{
+    display: flex;
+    flex-direction: column;
+}
+#single-page footer .wrapper .footer_cont .right .footer_data ul li a{
+font-size: 13px;
+font-weight: 400;
+line-height: 30px;
+text-align: left;
+color: #CBD5E1;
+}
+#single-page footer .wrapper .footer_cont .right .footer_data ul li a .icon_cont{
+    width: 290px;
+    height: 38px;  
+    margin-top: 20px;  
+}
+#single-page footer .wrapper .footer_cont .right .footer_data ul li a .icon_cont img{
+    width: 100%;
+    height: 100%;
+}
+/* footer styling ends */
