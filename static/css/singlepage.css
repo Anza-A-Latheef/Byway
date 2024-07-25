@@ -126,11 +126,11 @@ body{
     color: #0F172A;
 }
 #single-page #main #introduction .wrapper .introduction-cont .left .intro p{
-    font-size: 15px;
+    font-size: 15.5px;
     font-weight: 400;
     color: #334155;
     margin-top: 30px;
-    width: 80%;
+    width: 86%;
     line-height: 1.5;
 }
 #single-page #main #introduction .wrapper .introduction-cont .left .intro .details{
@@ -248,11 +248,14 @@ body{
     margin-bottom: 10px;
 }
 #single-page #main #introduction .wrapper .introduction-cont .left .description .describe p{
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 15.5px;
+    line-height: 1.6;
+}
+#single-page #main #introduction .wrapper .introduction-cont .left .description .describe p.instruct_p{
+    font-size: 15px;
 }
 #single-page #main #introduction .wrapper .introduction-cont .left .description .describe .instructor{
-   
+
 }
 #single-page #main #introduction .wrapper .introduction-cont .left .description .describe .instructor h6{
     color: #2563EB;
@@ -264,79 +267,115 @@ body{
     font-size: 15px;
 }
 #single-page #main #introduction .wrapper .introduction-cont .left .description .describe .instructor-profile{
+   margin: 10px 0px;
     display: flex;
+    align-items: center;
 }
 #single-page #main #introduction .wrapper .introduction-cont .left .description .describe .instructor-profile .profile-left{
-    width: 50px;
-    height: 50px;    
+    width: 120px;
+    height: 120px;    
 }
 #single-page #main #introduction .wrapper .introduction-cont .left .description .describe .instructor-profile .profile-left img{
     width: 100%;
     height: 100%;
 }
 #single-page #main #introduction .wrapper .introduction-cont .left .description .describe .instructor-profile .profile-right{
-
+    margin-left: 10px;
 }
 #single-page #main #introduction .wrapper .introduction-cont .left .description .describe .instructor-profile .profile-right ul{
 
 }
 #single-page #main #introduction .wrapper .introduction-cont .left .description .describe .instructor-profile .profile-right ul li{
-
+    display: flex;
 }
 #single-page #main #introduction .wrapper .introduction-cont .left .description .describe .instructor-profile .profile-right ul li .medal_cont{
-
+    width: 24px;
+    height: 24px;
+    padding: 2px 4.5px;
 }
 #single-page #main #introduction .wrapper .introduction-cont .left .description .describe .instructor-profile .profile-right ul li .medal_cont img{
     width: 100%;
     height: 100%;
 }
 #single-page #main #introduction .wrapper .introduction-cont .left .description .describe .instructor-profile .profile-right ul li span{
-
+    color:#0F172A;
+    font-size: 14px;
 }
 #single-page #main #introduction .wrapper .introduction-cont .left .syllabus{
-
+    border-bottom:1px solid #E2E8F0;
 }
 #single-page #main #introduction .wrapper .introduction-cont .left .syllabus h5{
-
+    color: #0F172A;
+    font-size: 19px;
+    margin-bottom: 10px;
 }
 #single-page #main #introduction .wrapper .introduction-cont .left .syllabus .syllabus-cont{
-
+    padding: 20px;
 }
 #single-page #main #introduction .wrapper .introduction-cont .left .syllabus .syllabus-cont ul{
-
+    border:1px solid #E2E8F0;
+    border-radius: 8px;
 }
 #single-page #main #introduction .wrapper .introduction-cont .left .syllabus .syllabus-cont ul li{
+    padding: 20px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:1px solid #E2E8F0;
 }
 #single-page #main #introduction .wrapper .introduction-cont .left .syllabus .syllabus-cont ul li .left{
     display: flex;
+    align-items: center;
+    gap: 20px;
 }
 #single-page #main #introduction .wrapper .introduction-cont .left .syllabus .syllabus-cont ul li .left i{
-
+    font-size: 24px;
 }
 #single-page #main #introduction .wrapper .introduction-cont .left .syllabus .syllabus-cont ul li .left h6{
-
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28.8px;
+    text-align: left;
+    
 }
 #single-page #main #introduction .wrapper .introduction-cont .left .syllabus .syllabus-cont ul li .right{
     display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: end;
 }
 #single-page #main #introduction .wrapper .introduction-cont .left .syllabus .syllabus-cont ul li .right span{
-
+    font-size: 14px;
+    line-height: 21px;
+    color: #334155;
 }
 #single-page #main #introduction .wrapper .introduction-cont .right{
-    width: 30%;
+    width: 35%;
 }
 #single-page #main #introduction .wrapper .introduction-cont .right .right-cont{
-
+    width: 400px;
+    height: 588px;
 }
 #single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card{
-
+    box-shadow: 0px 0px 8px 0px #3B82F61F;
+    border: 1px solid #E2E8F0;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 25px;
+    margin: 20px;
 }
 #single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-top{
 
 }
 #single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-top .poster{
-
+    width: 356px;
+    height: 200px;
+    border-radius: 8px;
 }
 #single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-top .poster img{
     width: 100%;
@@ -344,30 +383,60 @@ body{
 }
 #single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-top .price-detail{
     display: flex;
+    align-items: center;
+    margin: 30px 0px;
+    gap: 10px;
 }
 #single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-top .price-detail h2{
-
+    font-size: 24px;
+    font-weight: 700;
+    color: #0F172A;
 }
 #single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-top .price-detail h3{
-
+    font-size: 18px;
+    font-weight: 600;
+    color: #94A3B8;
+    text-decoration: line-through;    
 }
 #single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-top .price-detail span{
-
+    color: #16A34A;
+    font-weight: 600;
+    font-size: 19px;
 }
 #single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-top .card-button{
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
 }
 #single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-top .card-button button{
-
+    width: 100%;
+    padding: 15px 24px;
+    gap: 6px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #fff;
+    color: #020617;
 }
 #single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-top .card-button button.cart-button{
-
+    background: #020617;
+    color: #fff;
 }
 #single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-bottom{
-
+    border-top: 1px solid #E2E8F0;
+    width: 100%;
+    display: flex;
+    margin: 20px 0px;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 20px;
 }
 #single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-bottom h6{
-
+    color: #0F172A;
+    font-size: 16px;
+    font-weight: 500;
 }
 #single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-bottom .social_cont{
     width: 304px;
@@ -380,32 +449,41 @@ body{
 /* introduction styling ends */
 /* reviews section styling starts */
 #single-page #main #reviews{
-
+    padding-top: 20px;
 }
 #single-page #main #reviews .wrapper h5{
-
+    font-size: 19px;
+    color: #0F172A;
 }
 #single-page #main #reviews .wrapper .reviews_cont{
     display: flex;
+    padding: 30px 0px;
 }
 #single-page #main #reviews .wrapper .reviews_cont .left{
-
+    width: 65%;
 }
 #single-page #main #reviews .wrapper .reviews_cont .left .rating{
+    align-items: center;
     display: flex;
+    gap: 5px;
+    margin-bottom: 20px;
 }
 #single-page #main #reviews .wrapper .reviews_cont .left .rating .star_cont{
-
+    width: 18px;
+    height: 18px;
 }
 #single-page #main #reviews .wrapper .reviews_cont .left .rating .star_cont img{
     width: 100%;
     height: 100%;
 }
 #single-page #main #reviews .wrapper .reviews_cont .left .rating h6{
-
+    font-size: 19px;
+    color: #0F172A;    
 }
-#single-page #main #reviews .wrapper .reviews_cont .left .rating p{
-
+#single-page #main #reviews .wrapper .reviews_cont .left .rating small{
+    font-size: 13px;
+    color: #334155;    
+    font-weight: 500;
 }
 #single-page #main #reviews .wrapper .reviews_cont .left .customer-rating{
 
@@ -415,19 +493,24 @@ body{
 }
 #single-page #main #reviews .wrapper .reviews_cont .left .customer-rating ul li{
     display: flex;
+    margin-bottom: 10px;
 }
 #single-page #main #reviews .wrapper .reviews_cont .left .customer-rating ul li .star_cont{
-
+    width: 18px;
+    height: 18px;
+    margin: 0px 1px;
 }
 #single-page #main #reviews .wrapper .reviews_cont .left .customer-rating ul li .star_cont img{
     width: 100%;
     height: 100%;
 }
 #single-page #main #reviews .wrapper .reviews_cont .left .customer-rating ul li .star_cont img.gray{
-
+    filter: grayscale(1);
+    opacity: 0.9;
 }
 #single-page #main #reviews .wrapper .reviews_cont .left .customer-rating ul li span{
-
+    font-size: 13px;
+    margin-left: 5px;
 }
 #single-page #main #reviews .wrapper .reviews_cont .right{
 
@@ -437,51 +520,77 @@ body{
 }
 #single-page #main #reviews .wrapper .reviews_cont .right  .review-section .card{
     display: flex;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    align-items: self-start;
+    justify-content: space-between;
+    padding: 15px;
+    margin-bottom: 15px;
 }
 #single-page #main #reviews .wrapper .reviews_cont .right  .review-section .card .cardleft{
     display: flex;
+    align-items: center;
+    gap: 15px;
 }
 #single-page #main #reviews .wrapper .reviews_cont .right  .review-section .card .cardleft .img-cont{
-
+    width: 60px;
+    height: 60px;    
 }
 #single-page #main #reviews .wrapper .reviews_cont .right  .review-section .card .cardleft .img-cont img{
     width: 100%;
     height: 100%;
 }
 #single-page #main #reviews .wrapper .reviews_cont .right  .review-section .card .cardleft h6{
-
+    font-size: 18px;
+    color: #0F172A;    
 }
 #single-page #main #reviews .wrapper .reviews_cont .right  .review-section .card .cardright{
-
+    width: 68%;
 }
 #single-page #main #reviews .wrapper .reviews_cont .right  .review-section .card .cardright .rating-date{
-    display: flex;
+    display: flex; 
+    margin-bottom: 15px;
+    align-items: center;
 }
 #single-page #main #reviews .wrapper .reviews_cont .right  .review-section .card .cardright .rating-date .rating{
-
+    display: flex;
+    align-items: center;
 }
 #single-page #main #reviews .wrapper .reviews_cont .right  .review-section .card .cardright .rating-date .rating .star_cont{
-
+    width: 17px;
+    height: 17px;
 }
 #single-page #main #reviews .wrapper .reviews_cont .right  .review-section .card .cardright .rating-date .rating .star_cont img{
     width: 100%;
     height: 100%;
 }
 #single-page #main #reviews .wrapper .reviews_cont .right  .review-section .card .cardright .rating-date .rating h6{
-
+    font-size: 19px;
 }
 #single-page #main #reviews .wrapper .reviews_cont .right  .review-section .card .cardright .rating-date span{
-
+    font-size: 14px;
+    margin-left: 20px;
 }
 #single-page #main #reviews .wrapper .reviews_cont .right  .review-section .card .cardright p{
-
+    font-size: 15px;
+    line-height: 1.5;
+}
+#single-page #main #reviews .wrapper .reviews_cont .right button.more-reviews{
+    padding: 15px 24px;
+    gap: 6px;
+    border-radius: 8px;
+    border: 1px solid #0F172A;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 500;
+    color: #0F172A;
 }
 /* reviews section styling ends */
 /* customer section styling starts */
 #single-page #customer{
     background-color: #F8FAFC;
     padding: 30px 0px;
-    margin: 55px 0px;
+    margin-bottom: 55px;
 }
 #single-page #customer .wrapper-scroll .customer_cont{
     display: flex;
@@ -770,3 +879,256 @@ color: #CBD5E1;
     height: 100%;
 }
 /* footer styling ends */
+
+
+/* Responsive */
+
+/* Responsive 1080px */
+@media all and (max-width:1080px){
+    #single-page #main #introduction .wrapper .introduction-cont .left{
+        width: 60%;
+    }
+    #single-page #courses .wrapper .courses_cont .bottom .cards ul li a .bg_cont{
+        width: 186px;
+        height: 124px;
+    }
+    #single-page #courses .wrapper .courses_cont .bottom .cards ul li a h5{
+        font-size: 17px;
+        line-height: 24.8px;
+    }
+    #single-page #courses .wrapper .courses_cont .bottom .cards ul li a .rating .star_cont{
+        width: 16px;
+        height: 16px;
+    }
+    #single-page #courses .wrapper .courses_cont .bottom .cards ul li a .rating small{
+        font-size: 11px;
+    }
+    #single-page #customer .wrapper-scroll .customer_cont .bottom .cards .card{
+        min-width: 30%;
+    }
+    #single-page #customer .wrapper-scroll .customer_cont .bottom .cards .card .quote_img{
+        width: 47px;
+        height: 47px;
+    }
+    #single-page #customer .wrapper-scroll .customer_cont .bottom .cards .card p{
+        font-size: 14px;
+    }
+    #single-page #customer .wrapper-scroll .customer_cont .bottom .cards .card .profile .pro_pic{
+        width: 58px;
+        height: 58px;
+    }
+    #single-page #customer .wrapper-scroll .customer_cont .bottom .cards .card .profile .details p{
+        font-size: 17px;
+    }
+}
+/* Responsive 980 */
+@media all and (max-width:980px){
+    #single-page #courses .wrapper .courses_cont .bottom .cards ul li{
+        width: 24%;
+    }
+    #single-page #courses .wrapper .courses_cont .bottom .cards ul li a .bg_cont{
+        width: 176px;
+        height: 118px;
+    }
+    #single-page #courses .wrapper .courses_cont .bottom .cards ul li a h5{
+        font-size: 16px;
+    }
+    #single-page #courses .wrapper .courses_cont .bottom .cards ul li a span{
+        font-size: 13px;
+    }
+    #single-page #courses .wrapper .courses_cont .bottom .cards ul li a h6{
+        font-size: 18px;
+    }
+    #single-page #customer .wrapper-scroll .customer_cont .top .left h5{
+        font-size: 21px;
+    }
+    #single-page #customer .wrapper-scroll .customer_cont .bottom .cards .card{
+        min-width: 47%;
+    }
+}
+
+/* Responsive 768px */
+
+@media all and (max-width:768px){
+    #single-page #courses .wrapper .courses_cont .bottom .cards ul{
+        width: 100%;
+        display: grid;
+        gap: 15px;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 2fr 2fr ;
+    }
+    #single-page #courses .wrapper .courses_cont .bottom .cards ul li{
+        width: 100%;
+    }
+    #single-page #courses .wrapper .courses_cont .bottom .cards ul li a .bg_cont{
+        width: 308px;
+        height: 182px;
+    }
+    #single-page #courses .wrapper .courses_cont .bottom .cards ul li a h5{
+        font-size: 21px;
+    }
+    #single-page #courses .wrapper .courses_cont .bottom .cards ul li a span{
+        font-size: 16px;
+    }
+    #single-page #courses .wrapper .courses_cont .bottom .cards ul li a .rating .star_cont{
+        width: 18px;
+        height: 18px;
+    }
+    #single-page #courses .wrapper .courses_cont .bottom .cards ul li a .rating small{
+        font-size: 12px;
+    }
+    #single-page #courses .wrapper .courses_cont .bottom .cards ul li a h6{
+        font-size: 21px;
+    }
+    #single-page #customer .wrapper-scroll .customer_cont .top .left{
+        width: 35%;
+    }
+    #single-page #customer .wrapper-scroll .customer_cont .top .right button{
+        padding: 20px 25px;
+    }
+    #single-page footer .wrapper .footer_cont{
+        flex-direction: column;
+    }
+    #single-page footer .wrapper .footer_cont .left{
+        width:100%;
+    }
+    #single-page footer .wrapper .footer_cont .right{
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+/* Responsive 640px */
+@media all and (max-width:640px){
+    #single-page #courses .wrapper .courses_cont .bottom .cards ul li a .bg_cont {
+        width: 240px;
+        height: 145px;
+    }
+    #single-page #courses .wrapper .courses_cont .bottom .cards ul li a h5{
+        font-size: 17px;
+    }
+    #single-page #customer .wrapper-scroll .customer_cont .top .right button{
+        padding: 8px 21px;
+    }
+}
+
+/* Responsive 540px */
+@media all and (max-width:540px){
+    #single-page #courses .wrapper .courses_cont .bottom .cards ul li a .bg_cont {
+        width: 199px;
+        height: 130px;
+    }
+    #single-page #courses .wrapper .courses_cont .bottom .cards ul li a h6 {
+        font-size: 18px;
+    }
+    #single-page #customer .wrapper-scroll .customer_cont .top .left h5 {
+        font-size: 18px;
+    }
+    #single-page footer .wrapper .footer_cont .right .footer_data {
+        width: 42%;
+    }
+    #single-page footer .wrapper .footer_cont .right .footer_data ul li a .icon_cont {
+        width: 180px;
+        height: 24px;
+    }
+}
+
+/* Responsive 480px */
+@media all and (max-width:480px){
+    #single-page #courses .wrapper .courses_cont .bottom .cards ul {
+        display: block;
+    }
+    #single-page #courses .wrapper .courses_cont .bottom .cards ul li a .bg_cont {
+        width: 100%;
+        height: 100%;
+    }
+    #single-page #courses .wrapper .courses_cont .bottom .cards ul li a h5 {
+        font-size: 20px;
+    }
+    #single-page #courses .wrapper .courses_cont .bottom .cards ul li a h6 {
+        font-size: 21px;
+    }
+    #single-page #customer .wrapper-scroll .customer_cont .top .left {
+        width: 53%;
+    }
+    #single-page #customer .wrapper-scroll .customer_cont .top .right {
+        gap: 16px;
+        margin-right: 26px;
+    }
+    #single-page #customer .wrapper-scroll .customer_cont .top .right button {
+        padding: 8px 18px;
+    }
+    #single-page #customer .wrapper-scroll .customer_cont .bottom .cards .card .quote_img {
+        width: 42px;
+        height: 42px;
+    }
+    #single-page #customer .wrapper-scroll .customer_cont .bottom .cards .card p {
+        font-size: 13px;
+        line-height: 21.6px;
+    }
+    #single-page #customer .wrapper-scroll .customer_cont .bottom .cards {
+        gap: 18px;
+    }
+    #single-page #customer .wrapper-scroll .customer_cont .bottom .cards .card .profile .pro_pic {
+        width: 50px;
+        height: 50px;
+    }
+    #single-page #customer .wrapper-scroll .customer_cont .bottom .cards .card .profile .details p {
+        font-size: 15px;
+    }
+    #single-page #customer .wrapper-scroll .customer_cont .bottom .cards .card .profile .details span {
+        font-size: 12px;
+    }
+}
+
+/* Responsive 360px */
+@media all and (max-width:360px){
+    #single-page #main header .wrapper .header_cont nav .right{
+        gap: 10px;
+    }
+    #single-page #main header .wrapper .header_cont nav .right button{
+        padding:5px;
+    }
+    #single-page #main header .wrapper .header_cont nav .right .icon_container{
+        width: 11px;
+        margin: 10px;
+    }
+    #single-page #courses .wrapper .courses_cont .top h3{
+        font-size: 20px;
+    }
+    #single-page #courses .wrapper .courses_cont .bottom .cards ul li a h5 {
+        font-size: 18px;
+    }
+    #single-page #courses .wrapper .courses_cont .bottom .cards ul li a h6 {
+        font-size: 20px;
+    }
+    #single-page #courses .wrapper .courses_cont .bottom .cards ul li{
+        margin-top: 10px;
+    }
+    #single-page #customer .wrapper-scroll .customer_cont .bottom .cards .card {
+        min-width: 90%;
+    }
+    #single-page footer .wrapper .footer_cont .right {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    #single-page footer .wrapper .footer_cont .right .footer_data {
+        width: 100%;
+        align-items: center;
+        margin-top: 10px;
+    }
+    #single-page footer .wrapper .footer_cont .right .footer_data ul {
+        align-items: center;
+    }
+    #single-page footer .wrapper .footer_cont .right .footer_data h6{
+        text-align: center;
+    }
+    #single-page footer .wrapper .footer_cont .right .footer_data ul li a{
+        text-align: center;
+    } 
+}
+
+/* Responsive 320px */
+@media all and (max-width:320px){
+
+}
