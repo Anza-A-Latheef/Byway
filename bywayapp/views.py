@@ -5,3 +5,6 @@ def home(request):
 
 def pageRoute(request):
     return render(request, "singlepage.html")
+
+def listCourses(request):
+    return render(request,"coursespage.html")

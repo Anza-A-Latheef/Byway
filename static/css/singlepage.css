@@ -55,7 +55,6 @@ body{
     line-height: 19.36px;
     text-align: left;
     color: #334155;
-
 }
 #single-page #main header .wrapper .header_cont nav .right{
     display: flex;
@@ -1126,9 +1125,4 @@ color: #CBD5E1;
     #single-page footer .wrapper .footer_cont .right .footer_data ul li a{
         text-align: center;
     } 
-}
-
-/* Responsive 320px */
-@media all and (max-width:320px){
-
 }
