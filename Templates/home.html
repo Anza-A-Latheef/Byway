@@ -96,50 +96,25 @@
                     <div class="bottom">
                         <div class="bottom_cont">
                             <ul>
+                                {% for i in cat|slice:":4"  %}
                                 <li>
-                                    <a href="#">
+                                    <a href="{% url 'ViewCategory' i.id %}">
                                         <div class="card">
                                             <div class="icon_cont">
-                                                <img src="{%static 'images/astrology.svg' %}"  alt="Astrology">
+                                                <img src="{{ i.cat_icon.url }}"  alt="Astrology">
                                             </div>
-                                            <h4>Astrology</h4>
-                                            <p>11 Courses</p>
+                                            <h4>{{i.cat_name }}</h4>
+                                            <p>
+                                                {% if i.course_count %}
+                                                    {{ i.course_count }} Courses
+                                                {% else %}
+                                                    0 Courses
+                                                {% endif %}
+                                            </p>
                                         </div>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="">
-                                        <div class="card">
-                                            <div class="icon_cont">
-                                                <img src="{%static 'images/devlopment.svg' %}" alt="">
-                                            </div>
-                                            <h4>Development</h4>
-                                            <p>12 Courses</p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <div class="card">
-                                            <div class="icon_cont">
-                                                <img src="{%static 'images/marketing.svg' %}" alt="">
-                                            </div>
-                                            <h4>Marketing</h4>
-                                            <p>12 Courses</p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <div class="card">
-                                            <div class="icon_cont">
-                                                <img src="{%static 'images/physics.svg' %}" alt="">
-                                            </div>
-                                            <h4>Physics</h4>
-                                            <p>14 Courses</p>
-                                        </div>
-                                    </a>
-                                </li>
+                                {% endfor %}
                             </ul>
                         </div>
                     </div>
@@ -158,13 +133,14 @@
                     <div class="bottom">
                         <div class="cards">
                             <ul>
+                                {% for i in crs|slice:":4" %}
                                 <li>
-                                    <a href="{% url 'singlepage' %}">
+                                    <a href="{% url 'singlepage' i.id %}">
                                         <div class="bg_cont">
-                                            <img src="{%static 'images/bg.jpg' %}" alt="Course Image">
+                                            <img src="{{i.course_cover.url}}" alt="Course Image">
                                         </div>
-                                        <h5>Beginner's Guide to Design</h5>
-                                        <span>By Ronald Richards</span>
+                                        <h5>{{ i.course_name }}</h5>
+                                        <span>By {{ i.course_instructor }}</span>
                                         <div class="rating">
                                             <div class="star_cont">
                                                 <img src="{%static 'images/star.svg' %}" alt="Rating star">
@@ -181,99 +157,13 @@
                                             <div class="star_cont">
                                                 <img src="{%static 'images/star.svg' %}" alt="Rating star">
                                             </div>
-                                            <small>(1200 Ratings)</small>
+                                            <small>({{i.course_rating}} Rating) </small>
                                         </div>
-                                        <p>22 Total Hours. 155 Lectures. Beginner</p>
-                                        <h6>$149.9</h6>
+                                        <p>{{ i.course_duration }}</p>
+                                        <h6>${{ i.course_price }}</h6>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="#">
-                                        <div class="bg_cont">
-                                            <img src="{%static 'images/bg.jpg' %}" alt="Course Image">
-                                        </div>
-                                        <h5>Beginner's Guide to Design</h5>
-                                        <span>By Ronald Richards</span>
-                                        <div class="rating">
-                                            <div class="star_cont">
-                                                <img src="{%static 'images/star.svg' %}" alt="Rating star">
-                                            </div>
-                                            <div class="star_cont">
-                                                <img src="{%static 'images/star.svg' %}" alt="Rating star">
-                                            </div>
-                                            <div class="star_cont">
-                                                <img src="{%static 'images/star.svg' %}" alt="Rating star">
-                                            </div>
-                                            <div class="star_cont">
-                                                <img src="{%static 'images/star.svg' %}" alt="Rating star">
-                                            </div>
-                                            <div class="star_cont">
-                                                <img src="{%static 'images/star.svg' %}" alt="Rating star">
-                                            </div>
-                                            <small>(1200 Ratings)</small>
-                                        </div>
-                                        <p>22 Total Hours. 155 Lectures. Beginner</p>
-                                        <h6>$149.9</h6>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <div class="bg_cont">
-                                            <img src="{%static 'images/bg.jpg' %}" alt="Course Image">
-                                        </div>
-                                        <h5>Beginner's Guide to Design</h5>
-                                        <span>By Ronald Richards</span>
-                                        <div class="rating">
-                                            <div class="star_cont">
-                                                <img src="{%static 'images/star.svg' %}" alt="Rating star">
-                                            </div>
-                                            <div class="star_cont">
-                                                <img src="{%static 'images/star.svg' %}" alt="Rating star">
-                                            </div>
-                                            <div class="star_cont">
-                                                <img src="{%static 'images/star.svg' %}" alt="Rating star">
-                                            </div>
-                                            <div class="star_cont">
-                                                <img src="{%static 'images/star.svg' %}" alt="Rating star">
-                                            </div>
-                                            <div class="star_cont">
-                                                <img src="{%static 'images/star.svg' %}" alt="Rating star">
-                                            </div>
-                                            <small>(1200 Ratings)</small>
-                                        </div>
-                                        <p>22 Total Hours. 155 Lectures. Beginner</p>
-                                        <h6>$149.9</h6>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <div class="bg_cont">
-                                            <img src="{%static 'images/bg.jpg' %}" alt="Course Image">
-                                        </div>
-                                        <h5>Beginner's Guide to Design</h5>
-                                        <span>By Ronald Richards</span>
-                                        <div class="rating">
-                                            <div class="star_cont">
-                                                <img src="{%static 'images/star.svg' %}" alt="Rating star">
-                                            </div>
-                                            <div class="star_cont">
-                                                <img src="{%static 'images/star.svg' %}" alt="Rating star">
-                                            </div>
-                                            <div class="star_cont">
-                                                <img src="{%static 'images/star.svg' %}" alt="Rating star">
-                                            </div>
-                                            <div class="star_cont">
-                                                <img src="{%static 'images/star.svg' %}" alt="Rating star">
-                                            </div>
-                                            <div class="star_cont">
-                                                <img src="{%static 'images/star.svg' %}" alt="Rating star">
-                                            </div>
-                                            <small>(1200 Ratings)</small>
-                                        </div>
-                                        <p>22 Total Hours. 155 Lectures. Beginner</p>
-                                        <h6>$149.9</h6>
-                                    </a>
-                                </li>
+                                {% endfor %}
                             </ul>
                         </div>
                     </div>
@@ -517,7 +407,8 @@
                     <div id="right-resp" class="right">
                         <h5>Become an Instructor</h5>
                         <p>Instructors from around the world teach millions of students on Byway. We provide the tools and skills to teach what you love</p>
-                        <button>Start Your Instructor Journey <i class="fa fa-arrow-right"></i></button>
+                        <button>Start Your Instructor Journey 
+                            <span><img src="{%static 'images/arrow-right.svg' %}" alt="Arrow right"/></span></button>
                     </div>
                     <div class="left">
                         <div class="instructor_img">
@@ -527,14 +418,14 @@
                     <div class="right" id="right">
                         <h5>Become an Instructor</h5>
                         <p>Instructors from around the world teach millions of students on Byway. We provide the tools and skills to teach what you love</p>
-                        <button>Start Your Instructor Journey <i class="fa fa-arrow-right"></i></button>
+                        <button>Start Your Instructor Journey <span><img src="{%static 'images/arrow-right.svg' %}" alt="Arrow right"/></span></button>
                     </div>
                 </div>
                 <div class="container">
                     <div class="right">
                         <h5>Transform your life through education</h5>
                         <p>Learners around the world are launching new careers, advancing in their fields, and enriching their lives.</p>
-                        <button>Checkout Courses <i class="fa fa-arrow-right"></i></button>
+                        <button>Checkout Courses <span><img src="{%static 'images/arrow-right.svg' %}" alt="Arrow right"/></span></button>
                     </div>
                     <div class="left dup">
                         <div class="instructor_image">

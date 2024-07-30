@@ -17,12 +17,12 @@ body{
 }
 .wrapper{
     margin: 0 auto;
-    max-width: 1280px;
+    max-width: 1440px;
     width: 89%;
 }
 .wrapper-scroll{
     margin: 0 10px 0 7% ;
-    max-width: 1280px;
+    max-width: 1440px;
     width: 93%;
 }
 /* home styling starts  */
@@ -651,10 +651,16 @@ body{
     border: none;
     margin: 10px 0px;
     font-size: 14px;
+    display: flex;
+    align-items: center;
 }
-#home #journey .wrapper .container .right button i{
-    font-size: 16px;
-    font-weight: lighter;
+#home #journey .wrapper .container .right button span{
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+}
+#home #journey .wrapper .container .right button span img{
+    width: 100%;
 }
 /* journey styling ends */
 /* footer styling starts */
@@ -922,6 +928,9 @@ color: #CBD5E1;
     #home #journey .wrapper .container .left .instructor_image {
         width: 440px;
         height: 288px;
+    }
+    #home #journey .wrapper .container .right {
+        margin-left: 40px;
     }
     #home footer .wrapper .footer_cont{
         flex-direction: column;
@@ -1212,5 +1221,9 @@ color: #CBD5E1;
 @media all and (max-width:320px){
     #home #main #spotlight .wrapper .spotlight_cont .left button {
         width: 69%;
+    }
+    #home #categories .wrapper .categories_cont .bottom .bottom_cont ul{
+        flex-direction: column;
+        display: flex;
     }
 }

@@ -62,16 +62,16 @@
                                 <ul>
                                     <li>Home <i class="fa fa-angle-right"></i></li>
                                     <li>Categories <i class="fa fa-angle-right"></i></li>
-                                    <li><span>Introduction to User Experience Design</span></li>
+                                    <li><span>{{crs.course_name}}</span></li>
                                 </ul>
                             </div>
                             <div class="intro">
-                                <h2>Introduction to User Experience Design</h2>
-                                <p>This course is meticulously crafted to provide you with a foundational understanding of the principles, methodologies, and tools that drive exceptional user experiences in the digital landscape.</p>
+                                <h2>{{crs.course_name}}</h2>
+                                <p>{{ crs.course_description }}</p>
                                 <div class="details">
                                     <div class="rating">
-                                        <span>4.6</span>
                                         <div class="rating-star">
+                                            <span>4.6</span>
                                             <div class="star_cont">
                                                 <img src="{%static 'images/star.svg' %}" alt="Rating star">
                                             </div>
@@ -87,22 +87,22 @@
                                             <div class="star_cont">
                                                 <img src="{%static 'images/star.svg' %}" alt="Rating star">
                                             </div>
-                                            <small>(651651 rating)</small>
+                                            <small>({{ crs.course_rating }} rating)</small>
                                         </div>
-                                        <small>22 total Hours. 155 Lectures. All levels</small>
+                                        <small>{{ crs.course_duration }}</small>
                                     </div>
                                 </div>
                                 <div class="creator">
                                     <div class="creator-profile">
                                         <img src="{%static 'images/creator.png' %}" alt="Rating star">
                                     </div>
-                                    <p>Created by <span>Ronal Richards</span></p>
+                                    <p>Created by <span>{{ crs.course_instructor }}</span></p>
                                 </div>
                                 <div class="languages">
                                     <div class="lang_icon">
                                         <img src="{%static 'images/language.svg' %}" alt="Languages icon">
                                     </div>
-                                    <p>English, Spanish, Italian, German</p>
+                                    <p>{{ crs.course_languages }}</p>
                                 </div>
                             </div>
                             <div class="tabs">
@@ -213,12 +213,12 @@
                                 <div class="card">
                                     <div class="card-top">
                                         <div class="poster">
-                                            <img src="{%static 'images/img.jpg' %}" alt="Course Poster">
+                                            <img src="{{ crs.course_thumbnail.url }}" alt="Course Poster">
                                         </div>
                                         <div class="price-detail">
-                                            <h2>$49.5</h2>
-                                            <h3>$99.5</h3>
-                                            <span>50% Off</span>
+                                            <h2>${{ crs.discounted_price }}</h2>
+                                            <h3>${{ crs.course_price }}</h3>
+                                            <span>{{ crs.course_discount}}% Off</span>
                                         </div>
                                         <div class="card-button">
                                             <button class="cart-button">Add To Cart</button>
@@ -538,13 +538,14 @@
                     <div class="bottom">
                         <div class="cards">
                             <ul>
+                                {% for i in courses|slice:":4" %}
                                 <li>
-                                    <a href="{% url 'singlepage' %}">
+                                    <a href="{% url 'singlepage' i.id %}">
                                         <div class="bg_cont">
-                                            <img src="{%static 'images/bg.jpg' %}" alt="Course Image">
+                                            <img src="{{i.course_cover.url}}" alt="Course Image">
                                         </div>
-                                        <h5>Beginner's Guide to Design</h5>
-                                        <span>By Ronald Richards</span>
+                                        <h5>{{ i.course_name }}</h5>
+                                        <span>By {{ i.course_instructor }}</span>
                                         <div class="rating">
                                             <div class="star_cont">
                                                 <img src="{%static 'images/star.svg' %}" alt="Rating star">
@@ -561,99 +562,13 @@
                                             <div class="star_cont">
                                                 <img src="{%static 'images/star.svg' %}" alt="Rating star">
                                             </div>
-                                            <small>(1200 Ratings)</small>
+                                            <small>({{i.course_rating}} Rating) </small>
                                         </div>
-                                        <p>22 Total Hours. 155 Lectures. Beginner</p>
-                                        <h6>$149.9</h6>
+                                        <p>{{ i.course_duration }}</p>
+                                        <h6>${{ i.course_price }}</h6>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="#">
-                                        <div class="bg_cont">
-                                            <img src="{%static 'images/bg.jpg' %}" alt="Course Image">
-                                        </div>
-                                        <h5>Beginner's Guide to Design</h5>
-                                        <span>By Ronald Richards</span>
-                                        <div class="rating">
-                                            <div class="star_cont">
-                                                <img src="{%static 'images/star.svg' %}" alt="Rating star">
-                                            </div>
-                                            <div class="star_cont">
-                                                <img src="{%static 'images/star.svg' %}" alt="Rating star">
-                                            </div>
-                                            <div class="star_cont">
-                                                <img src="{%static 'images/star.svg' %}" alt="Rating star">
-                                            </div>
-                                            <div class="star_cont">
-                                                <img src="{%static 'images/star.svg' %}" alt="Rating star">
-                                            </div>
-                                            <div class="star_cont">
-                                                <img src="{%static 'images/star.svg' %}" alt="Rating star">
-                                            </div>
-                                            <small>(1200 Ratings)</small>
-                                        </div>
-                                        <p>22 Total Hours. 155 Lectures. Beginner</p>
-                                        <h6>$149.9</h6>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <div class="bg_cont">
-                                            <img src="{%static 'images/bg.jpg' %}" alt="Course Image">
-                                        </div>
-                                        <h5>Beginner's Guide to Design</h5>
-                                        <span>By Ronald Richards</span>
-                                        <div class="rating">
-                                            <div class="star_cont">
-                                                <img src="{%static 'images/star.svg' %}" alt="Rating star">
-                                            </div>
-                                            <div class="star_cont">
-                                                <img src="{%static 'images/star.svg' %}" alt="Rating star">
-                                            </div>
-                                            <div class="star_cont">
-                                                <img src="{%static 'images/star.svg' %}" alt="Rating star">
-                                            </div>
-                                            <div class="star_cont">
-                                                <img src="{%static 'images/star.svg' %}" alt="Rating star">
-                                            </div>
-                                            <div class="star_cont">
-                                                <img src="{%static 'images/star.svg' %}" alt="Rating star">
-                                            </div>
-                                            <small>(1200 Ratings)</small>
-                                        </div>
-                                        <p>22 Total Hours. 155 Lectures. Beginner</p>
-                                        <h6>$149.9</h6>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <div class="bg_cont">
-                                            <img src="{%static 'images/bg.jpg' %}" alt="Course Image">
-                                        </div>
-                                        <h5>Beginner's Guide to Design</h5>
-                                        <span>By Ronald Richards</span>
-                                        <div class="rating">
-                                            <div class="star_cont">
-                                                <img src="{%static 'images/star.svg' %}" alt="Rating star">
-                                            </div>
-                                            <div class="star_cont">
-                                                <img src="{%static 'images/star.svg' %}" alt="Rating star">
-                                            </div>
-                                            <div class="star_cont">
-                                                <img src="{%static 'images/star.svg' %}" alt="Rating star">
-                                            </div>
-                                            <div class="star_cont">
-                                                <img src="{%static 'images/star.svg' %}" alt="Rating star">
-                                            </div>
-                                            <div class="star_cont">
-                                                <img src="{%static 'images/star.svg' %}" alt="Rating star">
-                                            </div>
-                                            <small>(1200 Ratings)</small>
-                                        </div>
-                                        <p>22 Total Hours. 155 Lectures. Beginner</p>
-                                        <h6>$149.9</h6>
-                                    </a>
-                                </li>
+                                {% endfor %}
                             </ul>
                         </div>
                     </div>
