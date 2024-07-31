@@ -1193,7 +1193,7 @@ color: #CBD5E1;
         height: 185px;
     }
     #single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-bottom .social_cont {
-        height: 45px;
+        height: 60px;
     }
     #single-page #main #introduction .wrapper .introduction-cont .left .tabs .tabs-container ul li {
         padding: 7px 3px;
@@ -1303,6 +1303,9 @@ color: #CBD5E1;
 @media all and (max-width:360px){
     #background {
         height: 455px;
+    }
+    #single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-bottom .social_cont {
+        height: 42px;
     }
     #single-page #main header .wrapper .header_cont nav .right{
         gap: 10px;
