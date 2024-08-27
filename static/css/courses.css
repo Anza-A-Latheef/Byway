@@ -74,11 +74,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-#course-page #main header .wrapper .header_cont nav .right .user-profile{
     font-size: 15px;
-    color: rgb(0, 0, 0);
     color: white;
+    cursor: pointer;
 }
 /* courses styling starts */
 #course-page #courses{
@@ -248,14 +246,25 @@ line-height: 30px;
 text-align: left;
 color: #CBD5E1;
 }
-#course-page footer .wrapper .footer_cont .right .footer_data ul li a .icon_cont{
-    width: 290px;
-    height: 38px;  
+#course-page footer .wrapper .footer_cont .right .footer_data .social_icons{
+    display: flex; 
+    align-items: center;
     margin-top: 20px;  
+    gap: 15px;
 }
-#course-page footer .wrapper .footer_cont .right .footer_data ul li a .icon_cont img{
+#course-page footer .wrapper .footer_cont .right .footer_data .social_icons .icon_cont{
+    background: #fff;
+    display: flex;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    align-items: center;
+    padding: 8px;
+    justify-content: center;
+}
+#course-page footer .wrapper .footer_cont .right .footer_data .social_icons .icon_cont img{
     width: 100%;
-    height: 100%;
+    height: 100%; 
 }
 /* footer styling ends */
 
@@ -379,9 +388,13 @@ color: #CBD5E1;
     #course-page footer .wrapper .footer_cont .right .footer_data {
         width: 42%;
     }
-    #course-page footer .wrapper .footer_cont .right .footer_data ul li a .icon_cont {
-        width: 180px;
-        height: 24px;
+    #course-page footer .wrapper .footer_cont .right .footer_data .social_icons{
+        gap: 5px;
+    }
+    #course-page footer .wrapper .footer_cont .right .footer_data .social_icons .icon_cont{
+        width: 35px;
+        height: 35px;
+        padding: 8px;
     }
 }
 
@@ -399,6 +412,11 @@ color: #CBD5E1;
     }
     #course-page #courses .wrapper .courses_cont .bottom .cards ul li a h6 {
         font-size: 21px;
+    }
+    #course-page footer .wrapper .footer_cont .right .footer_data .social_icons .icon_cont{
+        width: 30px;
+        height: 30px;
+        padding: 5px;
     }
 }
 
@@ -445,4 +463,12 @@ color: #CBD5E1;
     #course-page footer .wrapper .footer_cont .right .footer_data ul li a{
         text-align: center;
     } 
+    #course-page footer .wrapper .footer_cont .right .footer_data .social_icons{
+        gap: 15px;
+    }
+    #course-page footer .wrapper .footer_cont .right .footer_data .social_icons .icon_cont{
+        width: 38px;
+        height: 38px;
+        padding: 8px;
+    }
 }
