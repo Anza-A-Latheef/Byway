@@ -221,10 +221,11 @@ body{
     border: 1px solid #E2E8F0;
     font-size: 14px;
     color: #0F172A;
+    cursor: pointer;
 }
-#single-page #main #introduction .wrapper .introduction-cont .left .tabs .tabs-container ul li:nth-child(1){
+#single-page #main #introduction .wrapper .introduction-cont .left .tabs .tabs-container ul li:hover{
     background: #EFF6FF;
-    border: none;
+    border: 1px solid transparent;
 }
 #single-page #main #introduction .wrapper .introduction-cont .left .description .describe{
     margin-bottom: 20px;
@@ -407,7 +408,7 @@ body{
     background: #020617;
     color: #fff;
 }
-#single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-bottom{
+#single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card  .card-bottom {
     border-top: 1px solid #E2E8F0;
     width: 100%;
     display: flex;
@@ -416,19 +417,37 @@ body{
     gap: 10px;
     padding-top: 20px;
 }
-#single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-bottom h6{
+#single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card  .card-bottom h6{
     color: #0F172A;
     font-size: 16px;
     font-weight: 500;
 }
-#single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-bottom .social_cont{
+#single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card  .card-bottom .social_cont{
     width: 304px;
     height: 48px;
     cursor: pointer;
 }
-#single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-bottom .social_cont img{
+#single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card  .card-bottom .social_cont .social_icons{
+    display: flex; 
+    align-items: center;
+    margin-top: 20px;  
     width: 100%;
-    height: 100%;
+    justify-content: space-between;
+}
+#single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card  .card-bottom .social_cont .social_icons .icon_cont{
+    background: #fff;
+    display: flex;
+    border: 4px solid #f3f3f3;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    align-items: center;
+    padding: 8px;
+    justify-content: center;
+}
+#single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card  .card-bottom .social_cont .social_icons .icon_cont img{
+    width: 100%;
+    height: 100%; 
 }
 /* introduction styling ends */
 /* reviews section styling starts */
@@ -869,7 +888,7 @@ color: #CBD5E1;
 /* Responsive */
 
 /* Responsive 1080px */
-@media all and (max-width:1080px){
+@media all and (max-width:1100px){
     #background {
         height: 455px;
     }
@@ -881,7 +900,7 @@ color: #CBD5E1;
         width: 294px;
         height: 174px;
     }
-    #single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-bottom .social_cont {
+    #single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card  .card-bottom .social_cont {
         width: 266px;
         height: 45px;
     }
@@ -923,6 +942,10 @@ color: #CBD5E1;
     }
     #single-page #customer .wrapper-scroll .customer_cont .bottom .cards .card .profile .details p{
         font-size: 17px;
+    }
+    #single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-bottom .social_cont .social_icons .icon_cont {
+        width: 45px;
+        height: 45px;
     }
 }
 /* Responsive 980 */
@@ -1023,7 +1046,7 @@ color: #CBD5E1;
     #single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-top .card-button button {
         padding: 12px 20px;
     }
-    #single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-bottom .social_cont {
+    #single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card  .card-bottom .social_cont {
         width: 225px;
         height: 37px;
     }
@@ -1097,6 +1120,13 @@ color: #CBD5E1;
         width: 100%;
         margin-top: 30px;
     }
+    #single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-bottom .social_cont .social_icons {
+        margin-top: 0px;
+    }
+    #single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-bottom .social_cont .social_icons .icon_cont {
+        width: 43px;
+        height: 43px;
+    }
 }
 /* Responsive 640px */
 @media all and (max-width:640px){
@@ -1127,7 +1157,7 @@ color: #CBD5E1;
     #single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-top .price-detail h3 {
         font-size: 21px;
     }
-    #single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-bottom .social_cont {
+    #single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card  .card-bottom .social_cont {
         width: 100%;
         height: 58px;
     }
@@ -1156,6 +1186,10 @@ color: #CBD5E1;
     #single-page #main #introduction .wrapper .introduction-cont .left .intro .details .rating .rating-star{
         border-right: 3px solid #ccc;
     }
+    #single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-bottom .social_cont .social_icons .icon_cont {
+        width: 55px;
+        height: 55px;
+    }
 }
 
 /* Responsive 540px */
@@ -1175,7 +1209,7 @@ color: #CBD5E1;
     #single-page #main #introduction .wrapper .introduction-cont .left .intro .details .rating {
         gap: 0px;
     }
-    #single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-bottom .social_cont {
+    #single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card  .card-bottom .social_cont {
         height: 50px;
     }
     #single-page #courses .wrapper .courses_cont .bottom .cards ul li a .bg_cont {
@@ -1209,13 +1243,11 @@ color: #CBD5E1;
     #single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-top .poster {
         height: 185px;
     }
-    #single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-bottom .social_cont {
+    #single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card  .card-bottom .social_cont {
         height: 60px;
     }
     #single-page #main #introduction .wrapper .introduction-cont .left .tabs .tabs-container ul li {
         padding: 7px 3px;
-    }
-    #single-page #main #introduction .wrapper .introduction-cont .left .tabs .tabs-container ul li {
         font-size: 12px;
     }
     #single-page #main #introduction .wrapper .introduction-cont .left .path ul li {
@@ -1314,11 +1346,6 @@ color: #CBD5E1;
     #single-page #customer .wrapper-scroll .customer_cont .bottom .cards .card .profile .details span {
         font-size: 12px;
     }
-    #single-page footer .wrapper .footer_cont .right .footer_data .social_icons .icon_cont{
-        width: 30px;
-        height: 30px;
-        padding: 5px;
-    }
 }
 
 /* Responsive 360px */
@@ -1326,7 +1353,7 @@ color: #CBD5E1;
     #background {
         height: 455px;
     }
-    #single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-bottom .social_cont {
+    #single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card  .card-bottom .social_cont {
         height: 42px;
     }
     #single-page #main header .wrapper .header_cont nav .right{
@@ -1376,11 +1403,10 @@ color: #CBD5E1;
     #single-page footer .wrapper .footer_cont .right .footer_data .social_icons{
         gap: 15px;
     }
-    #single-page footer .wrapper .footer_cont .right .footer_data .social_icons .icon_cont{
-        width: 38px;
-        height: 38px;
-        padding: 8px;
-    } 
+    #single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-bottom .social_cont .social_icons .icon_cont {
+        width: 50px;
+        height: 50px;
+    }
 }
 /* Responsive 320 */
 @media all and (max-width:320px){
@@ -1390,7 +1416,11 @@ color: #CBD5E1;
     #single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-top .poster {
         height: 155px;
     }
-    #single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-bottom .social_cont {
+    #single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card  .card-bottom .social_cont {
         height: 38px;
+    }
+    #single-page #main #introduction .wrapper .introduction-cont .right .right-cont .card .card-bottom .social_cont .social_icons .icon_cont {
+        width: 43px;
+        height: 43px;
     }
 }

@@ -61,9 +61,9 @@
                         <div class="left">
                             <div class="path">
                                 <ul>
-                                    <li>Home <i class="fa fa-angle-right"></i></li>
-                                    <li>Categories <i class="fa fa-angle-right"></i></li>
-                                    <li><span>{{crs.course_name}}</span></li>
+                                    <li><a href="#">Home <i class="fa fa-angle-right"></i></a></li>
+                                    <li><a href="#">Categories <i class="fa fa-angle-right"></i></a></li>
+                                    <li><a href="#"><span>{{crs.course_name}}</span></a></li>
                                 </ul>
                             </div>
                             <div class="intro">
@@ -109,14 +109,14 @@
                             <div class="tabs">
                                 <div class="tabs-container">
                                     <ul>
-                                        <li>Description</li>
-                                        <li>Instructor</li>
-                                        <li>Syllabus</li>
-                                        <li>Reviews</li>
+                                        <li data-target="description-content">Description</li>
+                                        <li data-target="instructor-content">Instructor</li>
+                                        <li data-target="syllabus-content">Syllabus</li>
+                                        <li data-target="reviews">Reviews</li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="description">
+                            <div id="description-content" class="description">
                                 <div class="describe">
                                     <h5>Course Description</h5>
                                     <p>This interactive e-learning course will introduce you to User Experience (UX) design, the art of creating products and services that are intuitive, enjoyable, and user-friendly. Gain a solid foundation in UX principles and learn to apply them in real-world scenarios through engaging modules and interactive exercises.</p>
@@ -125,7 +125,7 @@
                                     <h5>Certification</h5>
                                     <p>At Byway, we understand the significance of formal recognition for your hard work and dedication to continuous learning. Upon successful completion of our courses, you will earn a prestigious certification that not only validates your expertise but also opens doors to new opportunities in your chosen field.</p>
                                 </div>
-                                <div class="describe">
+                                <div id="instructor-content" class="describe">
                                     <h5>Instructor</h5>
                                     <div class="instructor">
                                         <h6>Ronald Richards</h6>
@@ -161,7 +161,7 @@
                                     <p class="instruct_p">With over a decade of industry experience, Ronald brings a wealth of practical knowledge to the classroom. He has played a pivotal role in designing user-centric interfaces for renowned tech companies, ensuring seamless and engaging user experiences.</p>
                                 </div>
                             </div>
-                            <div class="syllabus">
+                            <div id="syllabus-content" class="syllabus">
                                 <h5>Syllabus</h5>
                                 <div class="syllabus-cont">
                                     <ul>
@@ -229,7 +229,33 @@
                                     <div class="card-bottom">
                                         <h6>Share</h6>
                                         <div class="social_cont">
-                                            <img src="{%static 'images/social2.png' %}" alt="Social media">
+                                            <div class="social_icons">
+                                                <a href="https://www.facebook.com/">
+                                                    <div class="icon_cont">
+                                                        <img src="{%static 'images/facebook.png' %}" alt="Facebook"/>
+                                                    </div>
+                                                </a>
+                                                <a href="https://github.com/">
+                                                    <div class="icon_cont">
+                                                        <img src="{%static 'images/github.png' %}" alt="Github"/>          
+                                                    </div>
+                                                </a>
+                                                <a href="https://www.google.co.in/">
+                                                    <div class="icon_cont">
+                                                        <img src="{%static 'images/google.png' %}" alt="Google"/>
+                                                    </div>
+                                                </a>
+                                                <a href="https://x.com/?lang=en">
+                                                    <div class="icon_cont">
+                                                        <img src="{%static 'images/twitter.png' %}" alt="Twitter"/>
+                                                    </div>
+                                                </a>
+                                                <a href="https://www.microsoft.com/en">
+                                                    <div class="icon_cont">
+                                                        <img src="{%static 'images/microsoft.png' %}" alt="Microsoft"/>
+                                                    </div>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
