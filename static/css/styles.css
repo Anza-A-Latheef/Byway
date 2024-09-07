@@ -18,7 +18,7 @@ body{
 .wrapper{
     margin: 0 auto;
     max-width: 1440px;
-    width: 89%;
+    width: 90%;
 }
 .wrapper-scroll{
     margin: 0 10px 0 7% ;
@@ -49,7 +49,7 @@ body{
     height: 100%;
 }
 #home #main header .wrapper .header_cont h1.left a span{
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 19.36px;
     text-align: left;
@@ -161,11 +161,11 @@ body{
     padding-right: 0px;
 }
 #home #count .wrapper .count_cont ul li h2{
-    font-size: 28px;
+    font-size: 32px;
 }
 #home #count .wrapper .count_cont ul li p{
-    font-size: 13px;
-    line-height: 25.6px;
+    font-size: 14px;
+    line-height: 33.6px;
 }
 /* count section style ends */
 /* categories section styling */
@@ -743,6 +743,25 @@ color: #CBD5E1;
 
 /* Responsive */
 
+/* Responsive 1440px */
+/* @media all and (max-width:1440px){
+    #home #main #spotlight .wrapper .spotlight_cont .left h2{
+        font-size: 39px;
+    }
+    #home #main #spotlight .wrapper .spotlight_cont .left p {
+        margin-top: 15px;
+    }
+} */
+
+/* Responsive 1280px */
+/* @media all and (max-width:1280px){
+    #home #main #spotlight .wrapper .spotlight_cont .left h2{
+        width: 80%;
+        font-size: 37px;
+        font-weight: 700;
+    }
+} */
+
 /* Responsive 1080px */
 @media all and (max-width:1100px){
     #home #main #spotlight .wrapper .spotlight_cont .left h2{
@@ -850,6 +869,7 @@ color: #CBD5E1;
 @media all and (max-width:768px){
     #home #main #spotlight .wrapper .spotlight_cont .left h2{
         font-size: 24px;
+        width: 95%;
     }
     #home #main #spotlight .wrapper .spotlight_cont .right .img_cont{
         width: 90%;
